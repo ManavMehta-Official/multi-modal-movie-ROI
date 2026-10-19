@@ -1,0 +1,21 @@
+{
+  "full_cohort_rows": 4910,
+  "complete_case_rows": 2601,
+  "coverage": 0.529735234215886,
+  "status_counts": {
+    "valid": 2601,
+    "not_acquired": 2213,
+    "access_denied": 82,
+    "unavailable": 14
+  },
+  "poster_bytes": 50916030,
+  "full_csv_sha256": "c734b13220f792bdfaf6c2975b709968802e948090ba24f8f8f15f67a0a0edd7",
+  "multimodal_csv_sha256": "58fe9a97dc4e75bcad41e98f68cb937a8a489a9dd57d1831bd21948a34a9da9e",
+  "poster_manifest_sha256": "84d64f600d647c6e90eab48b8218f075d22912c70f147bf64f134387cfb0103a",
+  "complete_case_date_min": "1922-01-11",
+  "complete_case_date_max": "2016-12-25",
+  "selection_rule": "Include every row whose matching cached poster passes PIL.verify; no filtering on revenue/ROI outcomes beyond original cohort filters.",
+  "acquisition_order": "Fixed seed42 shuffled full cohort; cache began with8 oldest films before shuffle.",
+  "missingness": "HTTP403 access denials, HTTP404 unavailable assets and unattempted images after broad access failures; downloads stopped after broad access failures; one denied URL was inadvertently retried by an in-flight batch and remained denied.",
+  "limitation": "Complete-case cohort is selected by image availability/acquisition and may differ from full cohort; ablations must use identical complete-case train/validation/calibration/test rows."
+}

@@ -1,0 +1,475 @@
+{
+  "selected_model": "tabular",
+  "validation_ablations": {
+    "tabular": {
+      "mae": 1.7298327830874594,
+      "rmse": 3.344984459244101,
+      "r2": -0.022794019005265342,
+      "roc_auc": 0.6467471033801384,
+      "brier": 0.21588173819645848,
+      "balanced_accuracy": 0.5444896859375468,
+      "n": 390,
+      "downside_prevalence": 0.32564102564102565
+    },
+    "tabular_text": {
+      "mae": 1.7420883404912089,
+      "rmse": 3.330386176602107,
+      "r2": -0.013886082292843938,
+      "roc_auc": 0.6189934433100805,
+      "brier": 0.21780193605524145,
+      "balanced_accuracy": 0.5635160623933415,
+      "n": 390,
+      "downside_prevalence": 0.32564102564102565
+    },
+    "tabular_poster": {
+      "mae": 1.7559300099621111,
+      "rmse": 3.348095991072704,
+      "r2": -0.02469772669441328,
+      "roc_auc": 0.6324062153827729,
+      "brier": 0.21580802453573372,
+      "balanced_accuracy": 0.5719289841621509,
+      "n": 390,
+      "downside_prevalence": 0.32564102564102565
+    },
+    "multimodal": {
+      "mae": 1.7577833331466326,
+      "rmse": 3.3269428716858593,
+      "r2": -0.011790641101979693,
+      "roc_auc": 0.6496811472710398,
+      "brier": 0.210160098333677,
+      "balanced_accuracy": 0.5754618125205833,
+      "n": 390,
+      "downside_prevalence": 0.32564102564102565
+    }
+  },
+  "final_test": {
+    "mae": 2.3221039757731416,
+    "rmse": 4.909664875320407,
+    "r2": -0.04253263198459689,
+    "roc_auc": 0.681296823276613,
+    "brier": 0.2055800042361265,
+    "balanced_accuracy": 0.6016028805389395,
+    "n": 391,
+    "downside_prevalence": 0.34271099744245526,
+    "uncalibrated_brier": 0.2099445337592718,
+    "reliability_bins": [
+      {
+        "lower": 0.0,
+        "upper": 0.2,
+        "n": 82,
+        "mean_prediction": 0.12167135640293344,
+        "observed_fraction": 0.14634146341463414
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.4,
+        "n": 155,
+        "mean_prediction": 0.3080605547905542,
+        "observed_fraction": 0.3161290322580645
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.6000000000000001,
+        "n": 122,
+        "mean_prediction": 0.4861065762158353,
+        "observed_fraction": 0.45901639344262296
+      },
+      {
+        "lower": 0.6000000000000001,
+        "upper": 0.8,
+        "n": 32,
+        "mean_prediction": 0.6477587270719767,
+        "observed_fraction": 0.53125
+      },
+      {
+        "lower": 0.8,
+        "upper": 1.0,
+        "n": 0,
+        "mean_prediction": null,
+        "observed_fraction": null
+      }
+    ],
+    "calibration_method": "Held-out sigmoid logistic regression"
+  },
+  "multimodal_final_test": {
+    "mae": 2.3856267586085136,
+    "rmse": 4.990328715849579,
+    "r2": -0.07707083743941623,
+    "roc_auc": 0.560892037865149,
+    "brier": 0.22313644388598167,
+    "balanced_accuracy": 0.5017858179917533,
+    "n": 391,
+    "downside_prevalence": 0.34271099744245526,
+    "uncalibrated_brier": 0.23245371083188093,
+    "reliability_bins": [
+      {
+        "lower": 0.0,
+        "upper": 0.2,
+        "n": 9,
+        "mean_prediction": 0.1869432203516181,
+        "observed_fraction": 0.2222222222222222
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.4,
+        "n": 334,
+        "mean_prediction": 0.30625363503201286,
+        "observed_fraction": 0.3203592814371258
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.6000000000000001,
+        "n": 48,
+        "mean_prediction": 0.4312511286060033,
+        "observed_fraction": 0.5208333333333334
+      },
+      {
+        "lower": 0.6000000000000001,
+        "upper": 0.8,
+        "n": 0,
+        "mean_prediction": null,
+        "observed_fraction": null
+      },
+      {
+        "lower": 0.8,
+        "upper": 1.0,
+        "n": 0,
+        "mean_prediction": null,
+        "observed_fraction": null
+      }
+    ],
+    "calibration_method": "Held-out sigmoid logistic regression"
+  },
+  "text_fallback_final_test": {
+    "mae": 2.325149329102204,
+    "rmse": 4.9151618932701595,
+    "r2": -0.044868444689506015,
+    "roc_auc": 0.5852546605493931,
+    "brier": 0.2208203540939587,
+    "balanced_accuracy": 0.5236947557930194,
+    "n": 391,
+    "downside_prevalence": 0.34271099744245526,
+    "uncalibrated_brier": 0.22925756525398583,
+    "reliability_bins": [
+      {
+        "lower": 0.0,
+        "upper": 0.2,
+        "n": 46,
+        "mean_prediction": 0.16942600399687305,
+        "observed_fraction": 0.17391304347826086
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.4,
+        "n": 248,
+        "mean_prediction": 0.3019705411158825,
+        "observed_fraction": 0.3387096774193548
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.6000000000000001,
+        "n": 94,
+        "mean_prediction": 0.45353866895600575,
+        "observed_fraction": 0.4148936170212766
+      },
+      {
+        "lower": 0.6000000000000001,
+        "upper": 0.8,
+        "n": 3,
+        "mean_prediction": 0.6517338576944578,
+        "observed_fraction": 1.0
+      },
+      {
+        "lower": 0.8,
+        "upper": 1.0,
+        "n": 0,
+        "mean_prediction": null,
+        "observed_fraction": null
+      }
+    ],
+    "calibration_method": "Held-out sigmoid logistic regression"
+  },
+  "test_by_model": {
+    "multimodal": {
+      "mae": 2.3856267586085136,
+      "rmse": 4.990328715849579,
+      "r2": -0.07707083743941623,
+      "roc_auc": 0.560892037865149,
+      "brier": 0.22313644388598167,
+      "balanced_accuracy": 0.5017858179917533,
+      "n": 391,
+      "downside_prevalence": 0.34271099744245526,
+      "uncalibrated_brier": 0.23245371083188093,
+      "reliability_bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.2,
+          "n": 9,
+          "mean_prediction": 0.1869432203516181,
+          "observed_fraction": 0.2222222222222222
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.4,
+          "n": 334,
+          "mean_prediction": 0.30625363503201286,
+          "observed_fraction": 0.3203592814371258
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.6000000000000001,
+          "n": 48,
+          "mean_prediction": 0.4312511286060033,
+          "observed_fraction": 0.5208333333333334
+        },
+        {
+          "lower": 0.6000000000000001,
+          "upper": 0.8,
+          "n": 0,
+          "mean_prediction": null,
+          "observed_fraction": null
+        },
+        {
+          "lower": 0.8,
+          "upper": 1.0,
+          "n": 0,
+          "mean_prediction": null,
+          "observed_fraction": null
+        }
+      ],
+      "calibration_method": "Held-out sigmoid logistic regression"
+    },
+    "tabular_text": {
+      "mae": 2.325149329102204,
+      "rmse": 4.9151618932701595,
+      "r2": -0.044868444689506015,
+      "roc_auc": 0.5852546605493931,
+      "brier": 0.2208203540939587,
+      "balanced_accuracy": 0.5236947557930194,
+      "n": 391,
+      "downside_prevalence": 0.34271099744245526,
+      "uncalibrated_brier": 0.22925756525398583,
+      "reliability_bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.2,
+          "n": 46,
+          "mean_prediction": 0.16942600399687305,
+          "observed_fraction": 0.17391304347826086
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.4,
+          "n": 248,
+          "mean_prediction": 0.3019705411158825,
+          "observed_fraction": 0.3387096774193548
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.6000000000000001,
+          "n": 94,
+          "mean_prediction": 0.45353866895600575,
+          "observed_fraction": 0.4148936170212766
+        },
+        {
+          "lower": 0.6000000000000001,
+          "upper": 0.8,
+          "n": 3,
+          "mean_prediction": 0.6517338576944578,
+          "observed_fraction": 1.0
+        },
+        {
+          "lower": 0.8,
+          "upper": 1.0,
+          "n": 0,
+          "mean_prediction": null,
+          "observed_fraction": null
+        }
+      ],
+      "calibration_method": "Held-out sigmoid logistic regression"
+    },
+    "tabular": {
+      "mae": 2.3221039757731416,
+      "rmse": 4.909664875320407,
+      "r2": -0.04253263198459689,
+      "roc_auc": 0.681296823276613,
+      "brier": 0.2055800042361265,
+      "balanced_accuracy": 0.6016028805389395,
+      "n": 391,
+      "downside_prevalence": 0.34271099744245526,
+      "uncalibrated_brier": 0.2099445337592718,
+      "reliability_bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.2,
+          "n": 82,
+          "mean_prediction": 0.12167135640293344,
+          "observed_fraction": 0.14634146341463414
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.4,
+          "n": 155,
+          "mean_prediction": 0.3080605547905542,
+          "observed_fraction": 0.3161290322580645
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.6000000000000001,
+          "n": 122,
+          "mean_prediction": 0.4861065762158353,
+          "observed_fraction": 0.45901639344262296
+        },
+        {
+          "lower": 0.6000000000000001,
+          "upper": 0.8,
+          "n": 32,
+          "mean_prediction": 0.6477587270719767,
+          "observed_fraction": 0.53125
+        },
+        {
+          "lower": 0.8,
+          "upper": 1.0,
+          "n": 0,
+          "mean_prediction": null,
+          "observed_fraction": null
+        }
+      ],
+      "calibration_method": "Held-out sigmoid logistic regression"
+    }
+  },
+  "baseline_test": {
+    "mae": 2.378580165628231,
+    "rmse": 4.943329368818863,
+    "r2": -0.05687848158062936,
+    "roc_auc": 0.5,
+    "brier": 0.22619234279339043,
+    "balanced_accuracy": 0.5,
+    "n": 391,
+    "downside_prevalence": 0.34271099744245526
+  },
+  "splits": {
+    "train": {
+      "n": 1560,
+      "start": "1922-01-11",
+      "end": "2007-03-23"
+    },
+    "validation": {
+      "n": 390,
+      "start": "2007-04-05",
+      "end": "2011-02-04"
+    },
+    "calibration": {
+      "n": 260,
+      "start": "2011-02-08",
+      "end": "2013-09-06"
+    },
+    "test": {
+      "n": 391,
+      "start": "2013-09-07",
+      "end": "2016-12-25"
+    }
+  },
+  "uncertainty": {
+    "nominal_coverage": 0.9,
+    "test_empirical_coverage": 0.8772378516624041,
+    "mean_interval_width": 6.27991299432109,
+    "calibration_n": 260,
+    "method": "Held-out absolute-residual interval; temporal shift breaks exchangeability, so 90% coverage is a target, not a guarantee."
+  },
+  "multimodal_uncertainty": {
+    "nominal_coverage": 0.9,
+    "test_empirical_coverage": 0.8797953964194374,
+    "mean_interval_width": 6.277102271097699,
+    "calibration_n": 260,
+    "method": "Held-out absolute-residual interval; temporal shift breaks exchangeability, so 90% coverage is a target, not a guarantee."
+  },
+  "uncertainty_by_model": {
+    "multimodal": {
+      "nominal_coverage": 0.9,
+      "test_empirical_coverage": 0.8797953964194374,
+      "mean_interval_width": 6.277102271097699,
+      "calibration_n": 260,
+      "method": "Held-out absolute-residual interval; temporal shift breaks exchangeability, so 90% coverage is a target, not a guarantee."
+    },
+    "tabular_text": {
+      "nominal_coverage": 0.9,
+      "test_empirical_coverage": 0.8900255754475703,
+      "mean_interval_width": 6.637315770674778,
+      "calibration_n": 260,
+      "method": "Held-out absolute-residual interval; temporal shift breaks exchangeability, so 90% coverage is a target, not a guarantee."
+    },
+    "tabular": {
+      "nominal_coverage": 0.9,
+      "test_empirical_coverage": 0.8772378516624041,
+      "mean_interval_width": 6.27991299432109,
+      "calibration_n": 260,
+      "method": "Held-out absolute-residual interval; temporal shift breaks exchangeability, so 90% coverage is a target, not a guarantee."
+    }
+  },
+  "data_quality": {
+    "raw_rows": 2601,
+    "eligible_rows": 2601,
+    "excluded_or_duplicate_rows": 0,
+    "zero_revenue_policy": "Excluded: zero may mean missing, creating selection bias; not treated as genuine zero receipts.",
+    "currency_assumption": "Budget and revenue are assumed comparable nominal USD, without inflation adjustment.",
+    "extreme_roi_rows_over_100": 0,
+    "source_audit": {
+      "source_url": "https://raw.githubusercontent.com/TjanMichela/Movie-Data-Analysis/main/movies_complete.csv",
+      "source_sha256": "1d5577a113f0bf99e954884c6f37924703930c300a4ac31ed50494a11f050aa9",
+      "raw_rows": 44691,
+      "retained_rows": 4910,
+      "unique_ids": 4910,
+      "date_min": "1922-01-11",
+      "date_max": "2016-12-25",
+      "missing_overview": 10,
+      "missing_poster_url": 0,
+      "filters": [
+        "budget >= 1,000,000 USD",
+        "revenue > 0 USD",
+        "release year 1920\u20132016",
+        "deduplicate movie id"
+      ],
+      "selection_warning": "Unknown/zero revenue excluded; observed-reporting selection bias. Historical metadata not guaranteed as-of-release snapshots.",
+      "units": "budget and revenue converted from million USD to nominal USD"
+    },
+    "cohort_audit": {
+      "full_cohort_rows": 4910,
+      "complete_case_rows": 2601,
+      "coverage": 0.529735234215886,
+      "status_counts": {
+        "valid": 2601,
+        "not_acquired": 2213,
+        "access_denied": 82,
+        "unavailable": 14
+      },
+      "poster_bytes": 50916030,
+      "full_csv_sha256": "c734b13220f792bdfaf6c2975b709968802e948090ba24f8f8f15f67a0a0edd7",
+      "multimodal_csv_sha256": "58fe9a97dc4e75bcad41e98f68cb937a8a489a9dd57d1831bd21948a34a9da9e",
+      "poster_manifest_sha256": "84d64f600d647c6e90eab48b8218f075d22912c70f147bf64f134387cfb0103a",
+      "complete_case_date_min": "1922-01-11",
+      "complete_case_date_max": "2016-12-25",
+      "selection_rule": "Include every row whose matching cached poster passes PIL.verify; no filtering on revenue/ROI outcomes beyond original cohort filters.",
+      "acquisition_order": "Fixed seed42 shuffled full cohort; cache began with8 oldest films before shuffle.",
+      "missingness": "HTTP403 access denials, HTTP404 unavailable assets and unattempted images after broad access failures; downloads stopped after broad access failures; one denied URL was inadvertently retried by an in-flight batch and remained denied.",
+      "limitation": "Complete-case cohort is selected by image availability/acquisition and may differ from full cohort; ablations must use identical complete-case train/validation/calibration/test rows."
+    },
+    "training_csv": "movies_multimodal.csv",
+    "image_complete_case_warning": "When training on the poster-available cohort, exclusion by image availability can bias the sample; all reported modality ablations use the same cohort.",
+    "poster_coverage_by_split": {
+      "train": 1.0,
+      "validation": 1.0,
+      "calibration": 1.0,
+      "test": 1.0
+    }
+  },
+  "classification_threshold": 0.5,
+  "classification_threshold_reason": "Fixed 0.5 probability for descriptive binary metrics; no economic decision threshold was optimized.",
+  "regression_specs": {
+    "tabular": "extratrees_log",
+    "tabular_text": "extratrees_log",
+    "tabular_poster": "extratrees_log",
+    "multimodal": "hgb_absolute_log"
+  },
+  "test_usage": "Reused exploratory temporal benchmark: initial results were seen before a bounded train/validation-only follow-on model comparison. This is not a fresh independent test; see artifacts_initial and experiments/validation_candidates.json. No further test-guided tuning."
+}

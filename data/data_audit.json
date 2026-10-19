@@ -1,0 +1,19 @@
+{
+  "source_url": "https://raw.githubusercontent.com/TjanMichela/Movie-Data-Analysis/main/movies_complete.csv",
+  "source_sha256": "1d5577a113f0bf99e954884c6f37924703930c300a4ac31ed50494a11f050aa9",
+  "raw_rows": 44691,
+  "retained_rows": 4910,
+  "unique_ids": 4910,
+  "date_min": "1922-01-11",
+  "date_max": "2016-12-25",
+  "missing_overview": 10,
+  "missing_poster_url": 0,
+  "filters": [
+    "budget >= 1,000,000 USD",
+    "revenue > 0 USD",
+    "release year 1920\u20132016",
+    "deduplicate movie id"
+  ],
+  "selection_warning": "Unknown/zero revenue excluded; observed-reporting selection bias. Historical metadata not guaranteed as-of-release snapshots.",
+  "units": "budget and revenue converted from million USD to nominal USD"
+}

@@ -1,0 +1,10 @@
+# Tested together on Python 3.12; preserve versions when loading bundled joblib.
+numpy==2.3.5
+pandas==2.2.3
+scipy==1.17.0
+scikit-learn==1.8.0
+joblib==1.5.3
+Pillow==12.3.0
+threadpoolctl==3.6.0
+streamlit==1.65.0
+pytest==9.1.1

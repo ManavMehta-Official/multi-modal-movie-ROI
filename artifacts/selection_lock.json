@@ -1,0 +1,59 @@
+{
+  "selected_model": "tabular",
+  "criterion": "lowest validation MAE",
+  "retained_models": [
+    "multimodal",
+    "tabular",
+    "tabular_text"
+  ],
+  "validation_ablations": {
+    "tabular": {
+      "mae": 1.7298327830874594,
+      "rmse": 3.344984459244101,
+      "r2": -0.022794019005265342,
+      "roc_auc": 0.6467471033801384,
+      "brier": 0.21588173819645848,
+      "balanced_accuracy": 0.5444896859375468,
+      "n": 390,
+      "downside_prevalence": 0.32564102564102565
+    },
+    "tabular_text": {
+      "mae": 1.7420883404912089,
+      "rmse": 3.330386176602107,
+      "r2": -0.013886082292843938,
+      "roc_auc": 0.6189934433100805,
+      "brier": 0.21780193605524145,
+      "balanced_accuracy": 0.5635160623933415,
+      "n": 390,
+      "downside_prevalence": 0.32564102564102565
+    },
+    "tabular_poster": {
+      "mae": 1.7559300099621111,
+      "rmse": 3.348095991072704,
+      "r2": -0.02469772669441328,
+      "roc_auc": 0.6324062153827729,
+      "brier": 0.21580802453573372,
+      "balanced_accuracy": 0.5719289841621509,
+      "n": 390,
+      "downside_prevalence": 0.32564102564102565
+    },
+    "multimodal": {
+      "mae": 1.7577833331466326,
+      "rmse": 3.3269428716858593,
+      "r2": -0.011790641101979693,
+      "roc_auc": 0.6496811472710398,
+      "brier": 0.210160098333677,
+      "balanced_accuracy": 0.5754618125205833,
+      "n": 390,
+      "downside_prevalence": 0.32564102564102565
+    }
+  },
+  "seed": 42,
+  "regression_specs": {
+    "tabular": "extratrees_log",
+    "tabular_text": "extratrees_log",
+    "tabular_poster": "extratrees_log",
+    "multimodal": "hgb_absolute_log"
+  },
+  "reused_benchmark": true
+}

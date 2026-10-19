@@ -1,0 +1,23 @@
+{
+  "predicted_roi": 0.8659996988851215,
+  "predicted_revenue": 46649992.47212804,
+  "downside_probability": 0.27757760244505725,
+  "roi_interval": {
+    "lower": -1,
+    "upper": 5.70341326330584,
+    "nominal_coverage": 0.9,
+    "test_empirical_coverage": 0.8900255754475703
+  },
+  "selected_model": "tabular_text",
+  "requested_model": "multimodal",
+  "used_modalities": [
+    "metadata",
+    "plot"
+  ],
+  "poster_available": false,
+  "warnings": [
+    "Poster missing or unreadable: using the separately trained and calibrated metadata + plot fallback model, not zero-image multimodal inference.",
+    "Release year is beyond the training period; temporal extrapolation is uncertain."
+  ],
+  "risk_definition": "Probability that worldwide box-office revenue is below reported production budget. Not actual investor loss probability."
+}

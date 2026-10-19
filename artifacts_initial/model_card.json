@@ -1,0 +1,46 @@
+{
+  "target": "Box-office ROI proxy = worldwide revenue / production budget - 1. Not investor profit.",
+  "point_estimate": "Inverse-transformed squared-loss prediction of log(1+revenue/budget). This is not a calibrated conditional expected ROI or expected revenue.",
+  "features": [
+    "budget",
+    "runtime",
+    "genres",
+    "original_language",
+    "release year/month",
+    "plot TF-IDF + train-only SVD",
+    "poster HSV histograms, spatial RGB statistics, grayscale texture"
+  ],
+  "excluded_features": [
+    "revenue as input",
+    "ROI as input",
+    "popularity",
+    "votes",
+    "ratings",
+    "post-release performance"
+  ],
+  "image_encoder": "Classical 73-dimensional pixel descriptors, not a pretrained neural embedding; no semantic claims.",
+  "text_encoder": "TF-IDF up to 10,000 unigrams/bigrams, train-only truncated SVD up to 32 dimensions.",
+  "limitations": [
+    "Poster-available complete-case cohort can introduce image availability selection bias.",
+    "Marketing/distribution costs and exhibitor splits unavailable.",
+    "Reported financial completeness creates selection bias.",
+    "Historical plots/posters may have been updated after release; pre-release provenance is unverified.",
+    "No inflation or currency verification.",
+    "Temporal drift, franchises, extreme ratios and missing posters weaken generalization.",
+    "Probability of proxy ROI below zero is not loss severity or investment advice.",
+    "Residual intervals are broad, empirical and not guaranteed under temporal shift."
+  ],
+  "seed": 42,
+  "versions": {
+    "python": "3.12.14",
+    "scikit_learn": "1.8.0",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5"
+  },
+  "data_sha256": "58fe9a97dc4e75bcad41e98f68cb937a8a489a9dd57d1831bd21948a34a9da9e",
+  "poster_manifest_sha256": "b42b661401452f6d52cafc2e356c54902e231c1f9a2babe4d602fabdfc97f02a",
+  "references": [
+    "https://scikit-learn.org/stable/modules/calibration.html",
+    "https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html"
+  ]
+}
